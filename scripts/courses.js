@@ -1,12 +1,47 @@
+// The updated course array provided
 const courses = [
-    { subject: 'CSE', number: 110, title: 'Introduction to Programming', credits: 2, completed: true },
-    { subject: 'WDD', number: 130, title: 'Web Fundamentals', credits: 2, completed: true },
-    { subject: 'CSE', number: 111, title: 'Programming with Functions', credits: 2, completed: true },
-    { subject: 'WDD', number: 131, title: 'Dynamic Web Fundamentals', credits: 2, completed: true },
-    { subject: 'WDD', number: 231, title: 'Frontend Web Development I', credits: 2, completed: false },
-    { subject: 'CSE', number: 210, title: 'Programming with Classes', credits: 2, completed: false },
-    { subject: 'WDD', number: 330, title: 'Web Frontend Development II', credits: 2, completed: false },
-    { subject: 'CSE', number: 310, title: 'Data Structures', credits: 3, completed: false }
+    {
+        subject: "CSE",
+        number: 110,
+        title: "Introduction to Programming",
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: "WDD",
+        number: 130,
+        title: "Web Fundamentals",
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: "CSE",
+        number: 111,
+        title: "Programming with Functions",
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: "CSE",
+        number: 210,
+        title: "Programming with Classes",
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: "WDD",
+        number: 131,
+        title: "Dynamic Web Fundamentals",
+        credits: 2,
+        completed: true
+    },
+    {
+        subject: "WDD",
+        number: 231,
+        title: "Web Frontend Development I",
+        credits: 2,
+        completed: false
+    }
 ];
 
 const courseList = document.getElementById('courseList');
@@ -21,10 +56,13 @@ function displayCourses(filteredCourses) {
     filteredCourses.forEach(course => {
         const card = document.createElement('div');
         card.classList.add('course-card');
+        
+        // Add 'completed' class if the course is completed
         if (course.completed) {
             card.classList.add('completed');
         }
 
+        // Build card HTML
         card.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
             <p>${course.title}</p>
@@ -52,7 +90,7 @@ function filterCourses(filter) {
     displayCourses(filtered);
 }
 
-// Add event listeners to buttons
+// Add event listeners to filter buttons
 filterButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         // Remove active class from all buttons
