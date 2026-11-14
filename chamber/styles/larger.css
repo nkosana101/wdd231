@@ -1,40 +1,42 @@
 @media (min-width: 700px) {
+  /* Fix the Navigation Menu */
   #menuButton {
-    display: none;
+    display: none; /* Hide hamburger on desktop */
   }
 
   .site-nav {
-    width: auto;
+    width: auto; /* Reset width */
   }
 
   .site-nav ul {
-    display: flex;
-    gap: 0.25rem;
+    display: flex; /* Show links horizontally */
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
   }
 
   .site-nav a {
-    padding: 0.5rem 0.75rem;
-    border-top: none;
-    border-radius: 0.25rem;
+    border-top: none; /* Remove mobile top borders */
   }
 
   .site-nav a:hover,
   .site-nav a[aria-current="page"] {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
   }
 
+  /* Fix the Grid Layout */
   #members.grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* This automatically fits as many 260px columns as possible */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
   }
 
+  /* Fix the Footer */
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-  }
-
-  .footer-contact,
-  .footer-dev {
-    margin: 0;
+    text-align: left;
   }
 }

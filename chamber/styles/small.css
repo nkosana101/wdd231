@@ -37,6 +37,7 @@ img {
   border: 0;
 }
 
+/* HEADER & NAVIGATION (Mobile) */
 header {
   background: var(--primary);
   color: #fff;
@@ -45,7 +46,6 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
 }
 
 .brand {
@@ -81,11 +81,11 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none;
+  display: none; /* Hidden by default on mobile */
 }
 
 .site-nav ul.open {
-  display: block;
+  display: block; /* Shows when hamburger is clicked */
 }
 
 .site-nav a {
@@ -102,6 +102,7 @@ header {
   font-weight: 700;
 }
 
+/* MAIN CONTENT */
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -133,28 +134,30 @@ h1 {
   color: #fff;
 }
 
+/* MEMBER CARDS (Grid View) */
 #members.grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Single column on mobile */
   gap: 1rem;
 }
 
 .member-card {
-  min-width: 0;
-  padding: 1rem;
+  padding: 16px;
   border: 1px solid var(--border);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column; /* Prevents weird image stretching */
 }
 
 .member-card img {
   width: 100%;
-  height: 150px;
-  object-fit: contain;
+  height: 180px;
+  object-fit: cover; /* This fixes the gray box issue */
   background: #f7f7f7;
-  border-radius: 0.25rem;
-  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 .member-card h2 {
@@ -173,20 +176,14 @@ h1 {
 
 .membership {
   font-weight: 700;
+  margin-top: 0.5rem;
 }
 
-.membership.gold {
-  color: #b8860b;
-}
+.membership.gold { color: #b8860b; }
+.membership.silver { color: #708090; }
+.membership.member { color: var(--muted); }
 
-.membership.silver {
-  color: #708090;
-}
-
-.membership.member {
-  color: var(--muted);
-}
-
+/* MEMBER CARDS (List View) */
 #members.list .member-card {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -201,6 +198,7 @@ h1 {
   margin: 0;
 }
 
+/* FOOTER */
 footer {
   margin-top: 2rem;
   padding: 1rem;
