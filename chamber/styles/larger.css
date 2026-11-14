@@ -1,0 +1,40 @@
+@media (min-width: 700px) {
+  #menuButton {
+    display: none;
+  }
+
+  .site-nav {
+    width: auto;
+  }
+
+  .site-nav ul {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .site-nav a {
+    padding: 0.5rem 0.75rem;
+    border-top: none;
+    border-radius: 0.25rem;
+  }
+
+  .site-nav a:hover,
+  .site-nav a[aria-current="page"] {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .footer-contact,
+  .footer-dev {
+    margin: 0;
+  }
+}

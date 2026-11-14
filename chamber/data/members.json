@@ -1,0 +1,66 @@
+
+[
+  {
+    "name": "Benoni Business Solutions",
+    "address": "12 Voortrekker Street, Benoni",
+    "phone": "011 555 0101",
+    "website": "https://example.com",
+    "image": "business1.jpg",
+    "membership": 3,
+    "description": "Professional business consulting and management services."
+  },
+  {
+    "name": "East Rand Tech Hub",
+    "address": "25 Woburn Avenue, Benoni",
+    "phone": "011 555 0102",
+    "website": "https://example.com",
+    "image": "business2.jpg",
+    "membership": 2,
+    "description": "Computer repairs, IT support and technology solutions."
+  },
+  {
+    "name": "Benoni Family Restaurant",
+    "address": "8 Tom Jones Street, Benoni",
+    "phone": "011 555 0103",
+    "website": "https://example.com",
+    "image": "business3.jpg",
+    "membership": 1,
+    "description": "A family restaurant offering delicious meals and friendly service."
+  },
+  {
+    "name": "Green Gardens Landscaping",
+    "address": "40 Bunyan Street, Benoni",
+    "phone": "011 555 0104",
+    "website": "https://example.com",
+    "image": "business4.jpg",
+    "membership": 2,
+    "description": "Garden maintenance, landscaping and outdoor design."
+  },
+  {
+    "name": "Benoni Auto Centre",
+    "address": "17 Railway Avenue, Benoni",
+    "phone": "011 555 0105",
+    "website": "https://example.com",
+    "image": "business5.jpg",
+    "membership": 3,
+    "description": "Vehicle maintenance, servicing and mechanical repairs."
+  },
+  {
+    "name": "East Rand Printing",
+    "address": "33 Princess Avenue, Benoni",
+    "phone": "011 555 0106",
+    "website": "https://example.com",
+    "image": "business6.jpg",
+    "membership": 1,
+    "description": "Printing, graphic design and business branding services."
+  },
+  {
+    "name": "Benoni Health and Wellness",
+    "address": "19 Harpur Avenue, Benoni",
+    "phone": "011 555 0107",
+    "website": "https://example.com",
+    "image": "business7.jpg",
+    "membership": 2,
+    "description": "Health and wellness services for the local community."
+  }
+]
