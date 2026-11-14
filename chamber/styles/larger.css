@@ -40,3 +40,8 @@
     text-align: left;
   }
 }
+@media screen and (min-width: 900px) {
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
