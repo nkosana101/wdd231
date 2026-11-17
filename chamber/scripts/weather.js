@@ -1,5 +1,5 @@
 
-const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
+const API_KEY = "5e223612200590afe290c55a90c9e9a3";
 
 // Benoni coordinates
 const LATITUDE = -26.1885;
