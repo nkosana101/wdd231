@@ -45,3 +45,13 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+WEATHER DESKTOP LAYOUT 
+
+@media screen and (min-width: 640px) {
+
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
