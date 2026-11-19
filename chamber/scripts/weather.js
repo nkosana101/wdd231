@@ -6,7 +6,7 @@ const LATITUDE = -26.1885;
 const LONGITUDE = 28.3208;
 
 const currentWeather = document.querySelector("#current-weather");
-const weatherForecast = document.querySelector("#weather-forecast");
+const weatherForecast = document.querySelector("#forecast");
 
 // Display date in a readable format
 function formatDate(date) {

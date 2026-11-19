@@ -1,6 +1,6 @@
 
 // Get the spotlight container
-const spotlightContainer = document.querySelector("#spotlights");
+const spotlightContainer = document.querySelector("#spotlights-container");
 
 // Convert membership number to membership level
 function getMembershipLevel(level) {
