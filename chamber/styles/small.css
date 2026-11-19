@@ -37,7 +37,7 @@ img {
   border: 0;
 }
 
-/* HEADER & NAVIGATION (Mobile) */
+/* HEADER & NAVIGATION */
 header {
   background: var(--primary);
   color: #fff;
@@ -73,7 +73,7 @@ header {
   cursor: pointer;
 }
 
-.site-nav {
+#navigation {
   width: 100%;
 }
 
@@ -81,14 +81,14 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none; /* Hidden by default on mobile */
+  display: none; 
 }
 
 .site-nav ul.open {
-  display: block; /* Shows when hamburger is clicked */
+  display: block; 
 }
 
-.site-nav a {
+#navigation a {
   display: block;
   padding: 0.6rem 0.25rem;
   color: #fff;
@@ -96,8 +96,8 @@ header {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.site-nav a:hover,
-.site-nav a[aria-current="page"] {
+#navigation a:hover,
+#navigation a[aria-current="page"] {
   color: var(--accent);
   font-weight: 700;
 }
@@ -218,7 +218,7 @@ footer a {
   margin-top: 0;
 }
 
--- WEATHER SECTION --
+/* WEATHER SECTION */
 
 .weather-section {
     padding: 25px;
