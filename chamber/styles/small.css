@@ -5,6 +5,9 @@
   --muted: #555;
   --bg: #ffffff;
   --border: #cccccc;
+  --on-dark: #ffffff;
+  --link: #9cd3ff;
+  --footer-bg: #222;
 }
 
 * {
@@ -278,6 +281,7 @@ footer a {
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 40vh;
 }
 .hero-img {
     display: block;
