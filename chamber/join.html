@@ -1,373 +1,358 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join the Chamber | Benoni Chamber of Commerce</title>
-  <meta name="description" content="Apply for any membership in the local chamber of commerce. Choose from NP, Bronze, Silver, and Gold membership levels you will have good benefits for your business.">
-  <meta name="author" content="Nkosana Dlamini">
-  <link rel="stylesheet" href="styles/join.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- ==== CHAMBER TEMPLATE: HEADER — replace with your site header ==== -->
+  <title>Join | Benoni Chamber of Commerce</title>
+
+  <meta name="description" content="Join the Benoni Chamber of Commerce and connect with local businesses, networking opportunities, training and business development benefits.">
+  <meta name="author" content="Nkosana Dlamini">
+
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Join | Benoni Chamber of Commerce">
+  <meta property="og:description" content="Become a member of the Benoni Chamber of Commerce and grow your business through networking, training and community opportunities.">
+  <meta property="og:image" content="https://nkosana101.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://nkosana101.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/join.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html">Benoni Chamber of Commerce</a>
-      <nav aria-label="Main">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html" aria-current="page">Join</a></li>
-        </ul>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Benoni Chamber of Commerce home">
+        <span class="brand-icon" aria-hidden="true">BC</span>
+        <span class="brand-name">
+          <strong>Benoni</strong>
+          <small>Chamber of Commerce</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active" aria-current="page">Join</a>
       </nav>
     </div>
   </header>
-  <!-- ==== END CHAMBER TEMPLATE: HEADER ==== -->
 
-  <main id="main">
-    <section class="section" aria-labelledby="page-title">
-      <div class="wrap">
-
-        <div class="page-intro">
-          <h1 id="page-title">Chamber Membership Application</h1>
-          <p class="lede">
-            Tell us about yourself and your organization. Choose a membership
-            level below, and we'll follow up within two business days.
-            Fields marked <span class="req-key" aria-hidden="true">*</span>
-            are required.
-          </p>
-        </div>
-
-        <div class="join-layout">
-
-          <!-- ==================== FORM ==================== -->
-          <form class="join-form" method="get" action="thankyou.html">
-
-            <fieldset>
-              <legend>Your details</legend>
-
-              <label class="field" for="firstName">
-                <span class="field-label">
-                  First name <span class="req" aria-hidden="true">*</span>
-                </span>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  title="Enter your first name"
-                  autocomplete="given-name"
-                  required>
-              </label>
-
-              <label class="field" for="lastName">
-                <span class="field-label">
-                  Last name <span class="req" aria-hidden="true">*</span>
-                </span>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  title="Enter your last name"
-                  autocomplete="family-name"
-                  required>
-              </label>
-
-              <label class="field" for="orgTitle">
-                <span class="field-label">
-                  Your title within the organization
-                  <span class="hint">(letters, hyphens and spaces only, at least 7 characters)</span>
-                </span>
-                <input
-                  type="text"
-                  id="orgTitle"
-                  name="orgTitle"
-                  title="Your job title, at least 7 characters using only letters, hyphens, and spaces — for example: Executive Director"
-                  autocomplete="organization-title"
-                  pattern="[A-Za-z\- ]{7,}"
-                  aria-describedby="orgTitle-help">
-                <span id="orgTitle-help" class="field-help">
-                  Example: “Executive Director” or “Vice-President”.
-                </span>
-              </label>
-
-              <label class="field" for="email">
-                <span class="field-label">
-                  Email address <span class="req" aria-hidden="true">*</span>
-                </span>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  title="Enter your email address, for example jane.doe@example.com"
-                  autocomplete="email"
-                  placeholder="jane.doe@example.com"
-                  required>
-              </label>
-
-              <label class="field" for="phone">
-                <span class="field-label">
-                  Mobile phone <span class="req" aria-hidden="true">*</span>
-                </span>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  title="Enter your mobile phone number, for example 555-010-2030"
-                  autocomplete="tel"
-                  placeholder="555-010-2030"
-                  required>
-              </label>
-
-              <label class="field" for="organization">
-                <span class="field-label">
-                  Business or organization name <span class="req" aria-hidden="true">*</span>
-                </span>
-                <input
-                  type="text"
-                  id="organization"
-                  name="organization"
-                  title="Enter the name of your business or organization"
-                  autocomplete="organization"
-                  required>
-              </label>
-            </fieldset>
-
-            <fieldset>
-              <legend>Membership level</legend>
-
-              <label class="radio" for="level-np">
-                <input
-                  type="radio"
-                  id="level-np"
-                  name="membershipLevel"
-                  value="np"
-                  title="NP Membership — for nonprofit organizations, no fee"
-                  required>
-                <span>
-                  <strong>NP Membership</strong>
-                  <span class="hint">Nonprofit organizations · no fee</span>
-                </span>
-              </label>
-
-              <label class="radio" for="level-bronze">
-                <input
-                  type="radio"
-                  id="level-bronze"
-                  name="membershipLevel"
-                  value="bronze"
-                  title="Bronze Membership — entry-level benefits for small businesses">
-                <span>
-                  <strong>Bronze Membership</strong>
-                  <span class="hint">Entry-level benefits for small businesses</span>
-                </span>
-              </label>
-
-              <label class="radio" for="level-silver">
-                <input
-                  type="radio"
-                  id="level-silver"
-                  name="membershipLevel"
-                  value="silver"
-                  title="Silver Membership — expanded visibility and event access">
-                <span>
-                  <strong>Silver Membership</strong>
-                  <span class="hint">Expanded visibility and event access</span>
-                </span>
-              </label>
-
-              <label class="radio" for="level-gold">
-                <input
-                  type="radio"
-                  id="level-gold"
-                  name="membershipLevel"
-                  value="gold"
-                  title="Gold Membership — full benefits, sponsorship recognition, and priority referrals">
-                <span>
-                  <strong>Gold Membership</strong>
-                  <span class="hint">Full benefits and sponsorship recognition</span>
-                </span>
-              </label>
-            </fieldset>
-
-            <fieldset>
-              <legend>About your organization</legend>
-
-              <label class="field" for="description">
-                <span class="field-label">
-                  Business or organization description
-                  <span class="hint">(optional)</span>
-                </span>
-                <textarea
-                  id="description"
-                  name="description"
-                  rows="5"
-                  title="Briefly describe what your business or organization does"></textarea>
-              </label>
-            </fieldset>
-
-            <!-- Hidden timestamp: value is set by scripts/join.js when the page loads -->
-            <input type="hidden" name="timestamp" id="timestamp">
-
-            <div class="form-actions">
-              <input type="submit" class="btn btn--primary" value="Submit membership application">
-              <p class="form-actions-note muted">
-                Submitting sends your information to our membership coordinator.
-              </p>
-            </div>
-          </form>
-
-          <!-- ==================== MEMBERSHIP CARDS ==================== -->
-          <aside class="membership-aside" aria-labelledby="levels-heading">
-            <h2 id="levels-heading">Membership levels</h2>
-            <p class="muted aside-lede">
-              Benefits grow with each level. Select one to learn more.
-            </p>
-
-            <div class="membership-cards">
-
-              <article class="level-card level-card--np">
-                <h3>NP Membership</h3>
-                <p class="level-price">No fee</p>
-                <p class="muted">For nonprofit organizations serving our community.</p>
-                <a href="#modal-np" class="level-link" data-open-dialog="modal-np">
-                  Learn about NP benefits
-                  <span aria-hidden="true">→</span>
-                </a>
-              </article>
-
-              <article class="level-card level-card--bronze">
-                <h3>Bronze Membership</h3>
-                <p class="level-price">$250<span> / year</span></p>
-                <p class="muted">The foundation tier for small businesses getting started.</p>
-                <a href="#modal-bronze" class="level-link" data-open-dialog="modal-bronze">
-                  Learn about Bronze benefits
-                  <span aria-hidden="true">→</span>
-                </a>
-              </article>
-
-              <article class="level-card level-card--silver">
-                <h3>Silver Membership</h3>
-                <p class="level-price">$500<span> / year</span></p>
-                <p class="muted">More visibility, more events, more connections.</p>
-                <a href="#modal-silver" class="level-link" data-open-dialog="modal-silver">
-                  Learn about Silver benefits
-                  <span aria-hidden="true">→</span>
-                </a>
-              </article>
-
-              <article class="level-card level-card--gold">
-                <h3>Gold Membership</h3>
-                <p class="level-price">$1,000<span> / year</span></p>
-                <p class="muted">Our highest tier, with sponsorship recognition.</p>
-                <a href="#modal-gold" class="level-link" data-open-dialog="modal-gold">
-                  Learn about Gold benefits
-                  <span aria-hidden="true">→</span>
-                </a>
-              </article>
-
-            </div>
-          </aside>
-
-        </div>
-      </div>
+  <main id="main-content" class="wrap">
+    <section class="page-intro">
+      <p class="eyebrow">Become a member</p>
+      <h1>Join the Benoni Chamber of Commerce</h1>
+      <p>
+        Become part of a growing business community. Connect with local
+        entrepreneurs, discover new opportunities and help strengthen
+        businesses in Benoni.
+      </p>
     </section>
 
-    <!-- ==================== MODALS ==================== -->
-    <dialog class="modal" id="modal-np" aria-labelledby="modal-np-title">
-      <div class="modal-head">
-        <h2 id="modal-np-title">NP Membership benefits</h2>
-        <button type="button" class="modal-close" data-close-dialog aria-label="Close NP Membership benefits">×</button>
-      </div>
-      <div class="modal-body">
-        <p class="level-price">No fee</p>
-        <p>For nonprofit organizations with a mission that serves our community.</p>
+    <div class="join-layout">
+
+      <!-- Membership application form -->
+      <section class="application-section" aria-labelledby="form-heading">
+        <h2 id="form-heading">Membership Application</h2>
+        <p class="section-description">
+          Complete the form below to apply for membership.
+          Fields marked with an asterisk (*) are required.
+        </p>
+
+        <form method="get" action="thankyou.html" class="join-form">
+
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              autocomplete="given-name"
+              title="Enter your first name."
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              autocomplete="family-name"
+              title="Enter your last name."
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="orgTitle">Applicant's Organization Title</label>
+            <input
+              type="text"
+              id="orgTitle"
+              name="orgTitle"
+              autocomplete="organization-title"
+              pattern="[A-Za-z -]{7,}"
+              title="Enter at least seven letters, spaces or hyphens.">
+            <small>Enter at least seven letters, spaces or hyphens.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              autocomplete="email"
+              title="Enter a valid email address."
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Mobile Phone Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              placeholder="e.g. 0821234567"
+              title="Enter your telephone number."
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="organization">Business or Organization Name *</label>
+            <input
+              type="text"
+              id="organization"
+              name="organization"
+              autocomplete="organization"
+              title="Enter your business or organization name."
+              required>
+          </div>
+
+          <fieldset class="membership-options">
+            <legend>Choose Your Membership Level *</legend>
+
+            <label class="radio-option" for="level-np">
+              <input
+                type="radio"
+                id="level-np"
+                name="membershipLevel"
+                value="np"
+                required>
+              <span>Non-Profit Membership</span>
+            </label>
+
+            <label class="radio-option" for="level-bronze">
+              <input
+                type="radio"
+                id="level-bronze"
+                name="membershipLevel"
+                value="bronze">
+              <span>Bronze Membership</span>
+            </label>
+
+            <label class="radio-option" for="level-silver">
+              <input
+                type="radio"
+                id="level-silver"
+                name="membershipLevel"
+                value="silver">
+              <span>Silver Membership</span>
+            </label>
+
+            <label class="radio-option" for="level-gold">
+              <input
+                type="radio"
+                id="level-gold"
+                name="membershipLevel"
+                value="gold">
+              <span>Gold Membership</span>
+            </label>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="description">Business or Organization Description</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="5"
+              placeholder="Tell us about your business or organization..."></textarea>
+          </div>
+
+          <input
+            type="hidden"
+            id="timestamp"
+            name="timestamp">
+
+          <button type="submit" class="submit-button">
+            Submit Membership Application
+          </button>
+        </form>
+      </section>
+
+      <!-- Membership level cards -->
+      <aside class="membership-section" aria-labelledby="membership-heading">
+        <h2 id="membership-heading">Membership Levels</h2>
+        <p class="section-description">
+          Explore the benefits of each membership option.
+        </p>
+
+        <div class="membership-cards">
+
+          <article class="level-card np-card">
+            <h3>Non-Profit</h3>
+            <p class="price">Free</p>
+            <p>Designed for qualifying non-profit organizations.</p>
+            <a href="#modal-np" data-open-dialog="modal-np">
+              View Benefits
+            </a>
+          </article>
+
+          <article class="level-card bronze-card">
+            <h3>Bronze</h3>
+            <p class="price">Entry Level</p>
+            <p>Build connections and increase your business visibility.</p>
+            <a href="#modal-bronze" data-open-dialog="modal-bronze">
+              View Benefits
+            </a>
+          </article>
+
+          <article class="level-card silver-card">
+            <h3>Silver</h3>
+            <p class="price">Enhanced</p>
+            <p>Access additional networking and promotional opportunities.</p>
+            <a href="#modal-silver" data-open-dialog="modal-silver">
+              View Benefits
+            </a>
+          </article>
+
+          <article class="level-card gold-card">
+            <h3>Gold</h3>
+            <p class="price">Premium</p>
+            <p>Enjoy premium exposure and business development opportunities.</p>
+            <a href="#modal-gold" data-open-dialog="modal-gold">
+              View Benefits
+            </a>
+          </article>
+
+        </div>
+      </aside>
+    </div>
+
+    <!-- Membership dialogs -->
+    <dialog id="modal-np" class="membership-dialog">
+      <div class="dialog-content">
+        <h2>Non-Profit Membership</h2>
+        <p>
+          This membership is intended for qualifying non-profit
+          organizations that want to connect with the local business community.
+        </p>
         <ul>
-          <li>Listing in the chamber's online business directory</li>
-          <li>Monthly member newsletter and community announcements</li>
-          <li>Invitation to new-member orientation</li>
-          <li>Nonprofit roundtable held each quarter</li>
-          <li>Member pricing on workshops and training sessions</li>
+          <li>Connect with local organizations.</li>
+          <li>Participate in selected chamber activities.</li>
+          <li>Build community partnerships.</li>
         </ul>
-        <p><a class="btn btn--ghost" href="#level-np" data-close-dialog>Choose NP Membership</a></p>
+        <div class="dialog-actions">
+          <button type="button" data-close-dialog>Close</button>
+          <a href="#level-np" data-close-dialog>Choose This Level</a>
+        </div>
       </div>
     </dialog>
 
-    <dialog class="modal" id="modal-bronze" aria-labelledby="modal-bronze-title">
-      <div class="modal-head">
-        <h2 id="modal-bronze-title">Bronze Membership benefits</h2>
-        <button type="button" class="modal-close" data-close-dialog aria-label="Close Bronze Membership benefits">×</button>
-      </div>
-      <div class="modal-body">
-        <p class="level-price">$250<span> / year</span></p>
-        <p>Everything in NP Membership, plus:</p>
+    <dialog id="modal-bronze" class="membership-dialog">
+      <div class="dialog-content">
+        <h2>Bronze Membership</h2>
+        <p>
+          A starting point for businesses looking to become involved
+          in the Benoni business community.
+        </p>
         <ul>
-          <li>Attendance at all monthly networking events</li>
-          <li>One complimentary lunch pass per quarter</li>
-          <li>Member pricing on chamber workshops and training</li>
-          <li>Ability to post job openings in the member portal</li>
-          <li>Access to the member-only discussion group</li>
+          <li>Business directory listing.</li>
+          <li>Networking opportunities.</li>
+          <li>Access to selected chamber updates.</li>
         </ul>
-        <p><a class="btn btn--ghost" href="#level-bronze" data-close-dialog>Choose Bronze Membership</a></p>
+        <div class="dialog-actions">
+          <button type="button" data-close-dialog>Close</button>
+          <a href="#level-bronze" data-close-dialog>Choose This Level</a>
+        </div>
       </div>
     </dialog>
 
-    <dialog class="modal" id="modal-silver" aria-labelledby="modal-silver-title">
-      <div class="modal-head">
-        <h2 id="modal-silver-title">Silver Membership benefits</h2>
-        <button type="button" class="modal-close" data-close-dialog aria-label="Close Silver Membership benefits">×</button>
-      </div>
-      <div class="modal-body">
-        <p class="level-price">$500<span> / year</span></p>
-        <p>Everything in Bronze Membership, plus:</p>
+    <dialog id="modal-silver" class="membership-dialog">
+      <div class="dialog-content">
+        <h2>Silver Membership</h2>
+        <p>
+          For businesses looking for greater visibility and more
+          opportunities to connect with potential customers.
+        </p>
         <ul>
-          <li>Rotating spotlight placement on the chamber home page</li>
-          <li>Two tickets to the annual awards dinner</li>
-          <li>Eligibility to serve on a chamber committee</li>
-          <li>Discounted booth space at the annual community expo</li>
-          <li>One featured post in the monthly member newsletter</li>
+          <li>All Bronze membership benefits.</li>
+          <li>Enhanced promotional opportunities.</li>
+          <li>Priority consideration for selected events.</li>
         </ul>
-        <p><a class="btn btn--ghost" href="#level-silver" data-close-dialog>Choose Silver Membership</a></p>
+        <div class="dialog-actions">
+          <button type="button" data-close-dialog>Close</button>
+          <a href="#level-silver" data-close-dialog>Choose This Level</a>
+        </div>
       </div>
     </dialog>
 
-    <dialog class="modal" id="modal-gold" aria-labelledby="modal-gold-title">
-      <div class="modal-head">
-        <h2 id="modal-gold-title">Gold Membership benefits</h2>
-        <button type="button" class="modal-close" data-close-dialog aria-label="Close Gold Membership benefits">×</button>
-      </div>
-      <div class="modal-body">
-        <p class="level-price">$1,000<span> / year</span></p>
-        <p>Everything in Silver Membership, plus:</p>
+    <dialog id="modal-gold" class="membership-dialog">
+      <div class="dialog-content">
+        <h2>Gold Membership</h2>
+        <p>
+          Our premium membership option for businesses seeking
+          increased exposure and stronger community connections.
+        </p>
         <ul>
-          <li>Priority spotlight placement on the chamber home page</li>
-          <li>Four tickets to the annual awards dinner</li>
-          <li>Complimentary booth space at the annual community expo</li>
-          <li>Recognition as an event sponsor at two chamber events</li>
-          <li>Quarterly roundtable with the chamber board</li>
-          <li>Priority placement in member-to-member referrals</li>
+          <li>All Silver membership benefits.</li>
+          <li>Premium promotional opportunities.</li>
+          <li>Featured business spotlight opportunities.</li>
         </ul>
-        <p><a class="btn btn--ghost" href="#level-gold" data-close-dialog>Choose Gold Membership</a></p>
+        <div class="dialog-actions">
+          <button type="button" data-close-dialog>Close</button>
+          <a href="#level-gold" data-close-dialog>Choose This Level</a>
+        </div>
       </div>
     </dialog>
-
   </main>
 
-  <!-- ==== CHAMBER TEMPLATE: FOOTER — replace with your site footer ==== -->
   <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p>© 2026 Benoni Chamber of Commerce. All rights reserved.</p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="footer-inner">
+      <div>
+        <h2>Benoni Chamber of Commerce</h2>
+        <p>Supporting local businesses and building a stronger community.</p>
+        <p>Benoni, Gauteng, South Africa</p>
+      </div>
+
+      <div class="footer-contact">
+        <p>Email: info@benonichamber.co.za</p>
+        <p>Phone: +27 11 000 0000</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentyear"></span> Benoni Chamber of Commerce</p>
+      <p>Developed by Nkosana Dlamini | WDD231</p>
+      <p id="lastModified"></p>
     </div>
   </footer>
-  <!-- ==== END CHAMBER TEMPLATE: FOOTER ==== -->
-
-  <script src="scripts/join.js" defer></script>
 </body>
 </html>
