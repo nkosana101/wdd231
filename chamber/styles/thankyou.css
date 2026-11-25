@@ -1,129 +1,164 @@
-/* ==========================================================================
-   css/thankyou.css
-   Page-specific styles for thankyou.html.
-   Loaded AFTER css/join.css, which provides the header, footer, buttons,
-   and colour variables.
-   ========================================================================== */
 
-.thanks-hero {
-  margin-bottom: 1.75rem;
+/* ==============================
+   BENONI CHAMBER
+   THANK YOU PAGE STYLES
+================================ */
+
+.thankyou-main {
+  min-height: 65vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Confirmation card */
+
+.confirmation-card {
+  width: min(800px, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
   text-align: center;
 }
 
-.check {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  margin-bottom: .75rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-dark);
-  background: var(--accent);
-  border-radius: 50%;
-  animation: popIn .5s ease-out both;
-}
+/* Success icon */
 
-@keyframes popIn {
-  from { opacity: 0; transform: scale(.6); }
-  to   { opacity: 1; transform: scale(1); }
-}
-
-.thanks-hero h1 {
-  margin: 0 0 .5rem;
-  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
-}
-
-.thanks-hero p {
-  max-width: 52ch;
-  margin: 0 auto;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-
-/* ---------- Application summary ---------- */
-.summary {
-  padding: 1.25rem 1.5rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-top: 6px solid var(--accent);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-}
-
-.summary h2 {
-  margin: 0 0 1rem;
-  font-size: 1.2rem;
-  color: var(--primary-dark);
-}
-
-.summary dl {
+.success-icon {
   display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: .55rem 1.25rem;
-  margin: 0;
-}
-
-.summary dt {
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 1.2rem;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #258451;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary);
 }
 
-.summary dd {
-  margin: 0;
-  overflow-wrap: anywhere;
+/* Heading and introduction */
+
+.confirmation-card .eyebrow {
+  margin-bottom: 0.5rem;
 }
 
-.summary dd.missing {
-  color: #7a5c00;
-  font-style: italic;
+.confirmation-card h1 {
+  margin: 0.5rem 0 1rem;
 }
 
-@media (max-width: 30rem) {
-  .summary dl {
-    grid-template-columns: 1fr;
-    gap: .15rem;
-  }
-
-  .summary dd {
-    margin-bottom: .8rem;
-    padding-left: .5rem;
-    border-left: 3px solid var(--border);
-  }
+.confirmation-message {
+  max-width: 620px;
+  margin: 0 auto 2rem;
+  color: var(--muted);
 }
 
-/* ---------- Notice when no data was received ---------- */
-.no-data {
-  margin: 0 0 1rem;
-  padding: .85rem 1rem;
-  color: #611a15;
-  background: #fdecea;
-  border-left: 6px solid #b3261e;
+.confirmation-card h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.details-intro {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Submitted application information */
+
+.application-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.application-details div {
+  min-width: 0;
+  padding: 1rem;
+  background: #eef6f9;
+  border-left: 4px solid var(--accent);
   border-radius: 6px;
 }
 
-/* ---------- Actions ---------- */
-.thanks-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .75rem;
-  margin-top: 1.75rem;
+.application-details dt {
+  margin-bottom: 0.35rem;
+  color: var(--primary-dark);
+  font-weight: 700;
 }
 
-.btn--secondary {
-  color: var(--primary);
-  background: transparent;
-  border-color: var(--primary);
+.application-details dd {
+  margin: 0;
+  color: var(--text);
+  overflow-wrap: anywhere;
 }
 
-.btn--secondary:hover,
-.btn--secondary:focus-visible {
-  color: #fff;
+.timestamp-detail {
+  grid-column: 1 / -1;
+}
+
+/* Next step message */
+
+.next-step {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f5f7fa;
+  border-radius: 6px;
+  color: var(--text);
+}
+
+/* Home button */
+
+.home-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.85rem 1.4rem;
+  color: #ffffff;
   background: var(--primary);
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
 }
+
+.home-button:hover {
+  color: #ffffff;
+  background: var(--primary-dark);
+}
+
+/* Tablet and desktop */
+
+@media (min-width: 600px) {
+  .confirmation-card {
+    padding: 3rem;
+  }
+
+  .application-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens */
+
+@media (max-width: 400px) {
+  .confirmation-card {
+    padding: 1.2rem;
+  }
+
+  .confirmation-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-button {
+    width: 100%;
+  }
+}
+
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
-  .check { animation: none; }
+  .home-button {
+    transition: none;
+  }
 }
