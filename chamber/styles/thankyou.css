@@ -1,0 +1,129 @@
+/* ==========================================================================
+   css/thankyou.css
+   Page-specific styles for thankyou.html.
+   Loaded AFTER css/join.css, which provides the header, footer, buttons,
+   and colour variables.
+   ========================================================================== */
+
+.thanks-hero {
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: .75rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  background: var(--accent);
+  border-radius: 50%;
+  animation: popIn .5s ease-out both;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(.6); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.thanks-hero h1 {
+  margin: 0 0 .5rem;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+}
+
+.thanks-hero p {
+  max-width: 52ch;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* ---------- Application summary ---------- */
+.summary {
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 6px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.summary h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+}
+
+.summary dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: .55rem 1.25rem;
+  margin: 0;
+}
+
+.summary dt {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.summary dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.summary dd.missing {
+  color: #7a5c00;
+  font-style: italic;
+}
+
+@media (max-width: 30rem) {
+  .summary dl {
+    grid-template-columns: 1fr;
+    gap: .15rem;
+  }
+
+  .summary dd {
+    margin-bottom: .8rem;
+    padding-left: .5rem;
+    border-left: 3px solid var(--border);
+  }
+}
+
+/* ---------- Notice when no data was received ---------- */
+.no-data {
+  margin: 0 0 1rem;
+  padding: .85rem 1rem;
+  color: #611a15;
+  background: #fdecea;
+  border-left: 6px solid #b3261e;
+  border-radius: 6px;
+}
+
+/* ---------- Actions ---------- */
+.thanks-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  margin-top: 1.75rem;
+}
+
+.btn--secondary {
+  color: var(--primary);
+  background: transparent;
+  border-color: var(--primary);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+  color: #fff;
+  background: var(--primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .check { animation: none; }
+}
