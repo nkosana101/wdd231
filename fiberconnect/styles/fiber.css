@@ -21,7 +21,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 header {
     background-color: var(--primary);
     color: var(--white);
@@ -40,7 +40,7 @@ header p {
     font-size: 1.1rem;
 }
 
-/* Main content */
+
 main {
     max-width: 1000px;
     margin: 30px auto;
@@ -73,7 +73,7 @@ li {
     margin-bottom: 10px;
 }
 
-/* Color scheme examples */
+
 .color-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -108,7 +108,7 @@ li {
     border: 1px solid #D5DEE6;
 }
 
-/* Typography examples */
+
 .font-example {
     background-color: var(--background);
     padding: 20px;
@@ -121,7 +121,7 @@ li {
     color: var(--primary);
 }
 
-/* Wireframes */
+
 .wireframe-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -145,7 +145,7 @@ li {
     font-weight: 500;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--primary);
     color: var(--white);
@@ -158,7 +158,7 @@ footer p {
     margin: 5px;
 }
 
-/* Mobile responsive design */
+
 @media screen and (max-width: 600px) {
     header h1 {
         font-size: 2rem;
