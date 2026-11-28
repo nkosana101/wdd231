@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Nkosana Dlamini">
+    <meta name="description" content="Explore the FiberConnect website plan, including its purpose, audience, scenarios, color scheme, typography, and responsive wireframes for an educational fiber optic technology website.">
+
+    <meta property="og:title" content="FiberConnect - Website Plan">
+    <meta property="og:description" content="Discover the planning and design of FiberConnect, an educational website about fiber optic technology.">
+    <meta property="og:type" content="website">
+
+    <title>FiberConnect | Website Plan</title>
+
+    <link rel="stylesheet" href="styles/fiber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>FiberConnect</h1>
+        <p>Understanding Fiber Optic Technology</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Site Name</h2>
+
+            <h3>FiberConnect - Understanding Fiber Optics</h3>
+
+            <p>
+                The name FiberConnect was selected because it represents
+                the connection between fiber optic technology and modern
+                communication. The website will help visitors understand
+                how fiber optics work and how they support fast and reliable
+                internet connectivity.
+            </p>
+
+            <p><strong>Proposed domain:</strong> fiberconnect.org</p>
+        </section>
+
+        <section>
+            <h2>2. FiberConnect Purpose</h2>
+
+            <p>
+                The purpose of FiberConnect is to provide educational
+                information about fiber optic technology. The website
+                will explain how fiber optics work, the different types
+                of fiber cables, their applications, installation processes,
+                and their benefits in modern communication networks.
+            </p>
+
+            <p>
+                The website will provide easy-to-understand information
+                for students, beginners, technology enthusiasts, and
+                anyone interested in learning about fiber optic internet.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Scenarios</h2>
+
+            <p>These are questions that visitors might ask when visiting the website:</p>
+
+            <ul>
+                <li>What is fiber optic technology, and how does it work?</li>
+                <li>What is the difference between single-mode and multimode fiber?</li>
+                <li>What equipment is needed when installing fiber optic cables?</li>
+                <li>What are the advantages of fiber optic internet compared to traditional copper cables?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Color Scheme</h2>
+
+            <p>
+                The FiberConnect website will use a blue-based color scheme
+                to represent technology, communication, reliability, and
+                professionalism. Orange will be used to highlight important
+                information and interactive elements.
+            </p>
+
+            <div class="color-list">
+                <div class="color-item">
+                    <div class="color-box primary"></div>
+                    <h3>Dark Blue</h3>
+                    <p>#123B5D</p>
+                    <p>Used for headings, navigation, and the website header.</p>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-box secondary"></div>
+                    <h3>Light Blue</h3>
+                    <p>#4EA5D9</p>
+                    <p>Used for links, section highlights, and secondary elements.</p>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-box accent"></div>
+                    <h3>Orange</h3>
+                    <p>#F2A541</p>
+                    <p>Used for buttons, important highlights, and accents.</p>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-box background"></div>
+                    <h3>Light Grey</h3>
+                    <p>#F4F7FA</p>
+                    <p>Used for the main page background and content sections.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Typography</h2>
+
+            <h3>Roboto</h3>
+
+            <p>
+                Roboto will be the main font throughout the FiberConnect
+                website because it is clean, modern, and easy to read
+                on different screen sizes.
+            </p>
+
+            <div class="font-example">
+                <h3>Roboto Bold - Headings</h3>
+                <p class="heading-example">
+                    Understanding Fiber Optic Technology
+                </p>
+
+                <h3>Roboto Regular - Body Text</h3>
+                <p>
+                    Fiber optic cables transmit information using light
+                    signals through thin strands of glass or plastic.
+                </p>
+            </div>
+
+            <ul>
+                <li><strong>Headings:</strong> Roboto Bold (700).</li>
+                <li><strong>Paragraphs:</strong> Roboto Regular (400).</li>
+                <li><strong>Navigation and buttons:</strong> Roboto Medium (500).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Wireframes</h2>
+
+            <p>
+                The wireframes will illustrate the planned layout of the
+                FiberConnect homepage on small and large screens. They
+                will focus on the structure and placement of the navigation,
+                main content, images, and footer before the final visual
+                design is developed.
+            </p>
+
+            <div class="wireframe-container">
+                <div class="wireframe">
+                    <h3>Small Viewport - Mobile</h3>
+
+                    <img
+                        src="images/cable.png"
+                        alt="Hand-drawn mobile wireframe of the FiberConnect homepage"
+                        loading="lazy"
+                    >
+
+                    <p>Mobile homepage layout.</p>
+                </div>
+
+                <div class="wireframe">
+                    <h3>Large Viewport - Desktop</h3>
+
+                    <img
+                        src="images/fibercable.png"
+                        alt="Hand-drawn desktop wireframe of the FiberConnect homepage"
+                        loading="lazy"
+                    >
+
+                    <p>Desktop homepage layout.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> FiberConnect | Nkosana Dlamini</p>
+        <p>Understanding Fiber Optic Technology</p>
+    </footer>
+
+    <script>
+        document.querySelector("#currentyear").textContent =
+            new Date().getFullYear();
+    </script>
+</body>
+</html>
